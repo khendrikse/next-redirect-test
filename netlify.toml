@@ -4,3 +4,8 @@
 
   [[plugins]]
   package = "./plugins/redirect-plugin"
+
+  [[redirects]]
+  from = "/image-cdn/*"
+  to = "/image-cdn/:splat"
+  status = 301
