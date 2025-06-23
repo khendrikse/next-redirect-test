@@ -7,6 +7,6 @@
 
   [[redirects]]
   from = "/test/*"
-  to = "/https://httpbin.org/headers"
+  to = "https://httpbin.org/headers/:splat"
   status = 200
   force = true
