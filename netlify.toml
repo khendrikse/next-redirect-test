@@ -8,4 +8,5 @@
   [[redirects]]
   from = "/test/*"
   to = "/https://httpbin.org/headers"
-  status = 200!
+  status = 200
+  force = true
