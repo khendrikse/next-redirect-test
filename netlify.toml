@@ -10,3 +10,9 @@
   to = "https://httpbin.org/headers"
   status = 200
   force = true
+
+  [[redirects]]
+  from = "/_next/static/*"
+  to = "/_next/static/:splat"
+  status = 200
+  force = true
