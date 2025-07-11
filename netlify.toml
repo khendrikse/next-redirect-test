@@ -2,9 +2,6 @@
 publish = ".next"
 command = "npm run build"
 
-[[plugins]]
-package = "./plugins/redirect-plugin"
-
 [[redirects]]
 from = "/test"
 to = "https://httpbin.org/headers"
