@@ -1,23 +1,18 @@
 [build]
-  publish = ".next"
-  command = "npm run build"
+publish = ".next"
+command = "npm run build"
 
-  [[plugins]]
-  package = "./plugins/redirect-plugin"
+[[plugins]]
+package = "./plugins/redirect-plugin"
 
-  [[redirects]]
-  from = "/test"
-  to = "https://httpbin.org/headers"
-  status = 200
-  force = true
+[[redirects]]
+from = "/test"
+to = "https://httpbin.org/headers"
+status = 200
+force = true
 
-  [[redirects]]
-  from = "/_next/static/*"
-  to = "/_next/static/:splat"
-  status = 200
-  force = true
-
-  [[plugins]]
-  package = "@netlify/plugin-csp-nonce"
-    [plugins.inputs]
-    reportOnly = false
+[[redirects]]
+from = "/_next/static/*"
+to = "/_next/static/:splat"
+status = 200
+force = true
